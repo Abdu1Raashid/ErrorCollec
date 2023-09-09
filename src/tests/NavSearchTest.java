@@ -1,54 +1,129 @@
 package tests;
 
-import java.io.IOException;
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import base.TestBase;
 import data.DataFile;
 import pages.NavSearchPage;
 
-public class NavSearchTest {
+public class NavSearchTest extends TestBase{
 	
-	WebDriver driver;
-	NavSearchPage nsp = new NavSearchPage();
-	DataFile df = new DataFile();
+
+	
+	public NavSearchTest() {
+		super();
+	}
+	
+	NavSearchPage nsp;
+	DataFile df;
 	
 	
 	@BeforeMethod
-	public void openBrowser() throws IOException {
-		nsp.openBrowser();
-		nsp.OpenPage();
+	public void openBrowser() {
+		intialization();
+		nsp = new NavSearchPage();
+		df = new DataFile();
+		
 		}
 	
 	@AfterMethod
 	public void closeBrowser() {
-		nsp.closeBrowser();
+		driver.quit();
 	}
 	
 	
-	  @Test
-	  public void SearchValues() throws InterruptedException {
+	  @Test(priority=1)
+	  public void SearchValuesOne() throws InterruptedException {
 		  
+		  /*
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		  wait.until(ExpectedConditions.visibilityOf(nsp.SearchTab));
+		  wait.until(ExpectedConditions.textToBePresentInElement(nsp.SearchTab,df.SearchValueOne));
+		  */
+		  
 		  nsp.ClickOnSearch();
+		  
+		  Thread.sleep(1000);
+	 
+		  nsp.AddInputValueToSearch(df.SearchValueOne);
+		 
+		  Thread.sleep(1000);
+		  
+		  nsp.ClickOnEnterValue();
+		  Thread.sleep(1000);
+		 
+	  }
+	  
+	  @Test(priority=2)
+	  public void SearchValuesTwo() throws InterruptedException {
+		  
+		
+		  nsp.ClickOnSearch();
+		  
 		  Thread.sleep(2000);
 		  
-		  wait.until(ExpectedConditions.visibilityOf(nsp.SearchTab));
-		  nsp.AddInputValueToSearch();
+		  nsp.AddInputValueToSearch(df.SearchValueTwo);
+		  Thread.sleep(2000);
+		  
+		  nsp.ClickOnEnterValue();
+		 
+		  Thread.sleep(4000);
 		  
 	  }
 	  
-	  //@Test
-	  public void SearchInputValue() {
+	  @Test(priority=3)
+	  public void SearchValuesThree() throws InterruptedException {
+		  
+		
+		  nsp.ClickOnSearch();
+		  
+		  Thread.sleep(2000);
+		  
+		  nsp.AddInputValueToSearch(df.SearchValueThree);
+		  Thread.sleep(2000);
+		  
+		  nsp.ClickOnEnterValue();
+		 
+		  Thread.sleep(4000);
 		  
 	  }
-  
+	  
+	  @Test(priority=4)
+	  public void SearchValuesFour() throws InterruptedException {
+		  
+		
+		  nsp.ClickOnSearch();
+		  
+		  Thread.sleep(2000);
+		  
+		  nsp.AddInputValueToSearch(df.SearchValueFour);
+		  Thread.sleep(2000);
+		  
+		  nsp.ClickOnEnterValue();
+		 
+		  Thread.sleep(4000);
+		  
+	  }
+	
+	  @Test(priority=5)
+	  public void SearchValuesFive() throws InterruptedException {
+		  
+		
+		  nsp.ClickOnSearch();
+		  
+		  Thread.sleep(2000);
+		  
+		  nsp.AddInputValueToSearch(df.SearchValueFive);
+		  Thread.sleep(2000);
+		  
+		  nsp.ClickOnEnterValue();
+		 
+		  Thread.sleep(4000);
+		  
+	  }
   
   
 }

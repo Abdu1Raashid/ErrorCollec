@@ -2,56 +2,63 @@ package tests;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import base.TestBase;
 import data.DataFile;
 import pages.LandingPage;
 
-public class LandingTest {
+public class LandingTest extends TestBase{
 	
-	WebDriver driver;
-	LandingPage lp = new LandingPage();
-	DataFile df = new DataFile();
+
+	LandingPage lp;
+	DataFile df;
+	
+	
+	public LandingTest() {
+		super();
+	}
 	
 	//OpenCloseBrow ocb = new OpenCloseBrow();
 	 
 	@BeforeMethod
-	public void getBrowser() throws IOException {
-		lp.openBrowser();
-		lp.OpenLandingPage();
-
+	public void getBrowser(){
+		intialization();
+		lp = new LandingPage();
+		df = new DataFile();
+		
+		
 	}
 	
 	@AfterMethod
-	public void closeBrowser() {
-		lp.closeBrowser();
+	public void tearDown() {
+		driver.quit();
 	}
 	
 		 @Test(priority=1)
-		  public void playVid() throws InterruptedException {
+		  public void playVid() {
 			
 			 lp.playVideo();
 			  
 		  }
 		  
 		  @Test(priority=2)
-		  public void ClickSignUp() throws InterruptedException{
+		  public void ClickSignUpAndChangeCountry() {
 			  
 			 lp.clickOnSignUp();
 			 
 		  }
 		  
-		  @Test(priority=3)
-		  public void SwipeRight() throws InterruptedException {
+		 @Test(priority=3)
+		  public void SwipeRight() {
 			
 			 lp.ClickToSwipe(); 
 		  }
 			  
-		  @Test(priority=4)
-		  public void SwipeSecond() throws InterruptedException {
+		 @Test(priority=4)
+		  public void SwipeSecond()  {
 			
 			  lp.ClickToSwipeTwo();
 		  
@@ -62,5 +69,10 @@ public class LandingTest {
 			  
 			  lp.ClickToSwipeThree();
 	  
-	  }
+	     }
+		 
+		 @Test(priority=6, groups = {"GetTitles"})
+		 public void GetTitle() {
+			 lp.GetPageTitles();
+		 }
 }

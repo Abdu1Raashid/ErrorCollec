@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.LandingTest">
+      <class name="tests.NavSearchTest">
         <methods>
-          <include name="ClickSignUp"/>
-          <include name="SwipeThird"/>
           <include name="closeBrowser"/>
-          <include name="getBrowser"/>
-          <include name="SwipeSecond"/>
-          <include name="playVid"/>
+          <include name="SearchValuesFive"/>
+          <include name="SearchValuesOne"/>
+          <include name="SearchValuesThree"/>
+          <include name="SearchValuesTwo"/>
+          <include name="SearchValuesFour"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- tests.LandingTest -->
+      </class> <!-- tests.NavSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
