@@ -8,8 +8,6 @@ import base.TestBase;
 
 public class NavSearchPage extends TestBase{
 	
-	
-	
 	@FindBy(xpath="//a[@class='AnchorLink NavBar__List--search']")
 	public WebElement SearchBar;
 	
@@ -19,15 +17,12 @@ public class NavSearchPage extends TestBase{
 	@FindBy(xpath="//div[@id='natgeo-search-input']//button")
 	public WebElement SearchClick;
 	
-	
 	public NavSearchPage() {
 		PageFactory.initElements(driver, this);
-		
 	}
 	
 	public void ClickOnSearch() {
-		SearchBar.click();
-		
+		SearchBar.click();	
 	}
 	
 	public void AddInputValueToSearch(String a) {

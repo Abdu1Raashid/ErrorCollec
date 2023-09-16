@@ -13,49 +13,42 @@ import pages.NavMenuPage;
 
 public class NavMenuTest extends TestBase{
 	
-
-	
-	@FindBy(xpath="//nav[@class='NavBar']//li[5]")
-	public WebElement NavMenuButton;
-	
-	@FindBy(xpath="//div[@class='MenuModal__Content__Right']//li[4]")
-	public WebElement BookTrip;
-	
-	@FindBy(id="oneid-secure-responder")
-	public WebElement MenuFrame;
-	
+		NavMenuPage nmp;
+		
+		@FindBy(xpath="//nav[@class='NavBar']//li[5]")
+		public WebElement NavMenuButton;
+		
+		@FindBy(xpath="//div[@class='MenuModal__Content__Right']//li[4]")
+		public WebElement BookTrip;
+		
+		@FindBy(id="oneid-secure-responder")
+		public WebElement MenuFrame;
+		
 
 	public NavMenuTest() {
 		super();
 	}
+
+	  @BeforeMethod
+	  public void beforeMethod() throws IOException {
+		  intialization();
+		  nmp = new NavMenuPage();		  
+	  }
 	
-
-
-	NavMenuPage nmp;
-	
- 
-  @BeforeMethod
-  public void beforeMethod() throws IOException {
-	  intialization();
-	  nmp = new NavMenuPage();
-	  
-	  
+	  @AfterMethod
+	  public void afterMethod() {
+		  driver.quit();
   }
-
-  @AfterMethod
-  public void afterMethod() {
-	  driver.quit();
-  }
-
-  @Test
-  public void GetToTrip() throws InterruptedException {
-	  Thread.sleep(1000);
-	  
-	  nmp.ClickMenu();
-	  Thread.sleep(3000);
-	
-	  nmp.ClickBookATrip();
-
-  }
+		
+		  @Test
+		  public void GetToTrip() throws InterruptedException {
+			  Thread.sleep(1000);
+			  
+			  nmp.ClickMenu();
+			  Thread.sleep(3000);
+			
+			  nmp.ClickBookATrip();
+		
+		  }
   
 }

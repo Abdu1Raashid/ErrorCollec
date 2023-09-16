@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.NavLoginTest">
         <methods>
-          <include name="GenPredPasswordError"/>
+          <include name="GenFirstNameError"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>

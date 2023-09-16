@@ -1,319 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-08T21:24:26 EDT" name="Suite" finished-at="2023-09-08T21:28:24 EDT" duration-ms="237888">
+  <suite started-at="2023-09-11T10:51:26 EDT" name="Default suite" finished-at="2023-09-11T10:52:14 EDT" duration-ms="47830">
     <groups>
-      <group name="LoginCreateAcc">
-        <method signature="NavLoginTest.GenFirstNameError()[pri:2, instance:tests.NavLoginTest@21b2e768]" name="GenFirstNameError" class="tests.NavLoginTest"/>
-        <method signature="NavLoginTest.GenLastNameError()[pri:3, instance:tests.NavLoginTest@21b2e768]" name="GenLastNameError" class="tests.NavLoginTest"/>
-        <method signature="NavLoginTest.GenPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" name="GenPasswordError" class="tests.NavLoginTest"/>
-        <method signature="NavLoginTest.GenPredPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" name="GenPredPasswordError" class="tests.NavLoginTest"/>
-        <method signature="NavLoginTest.GenShortPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" name="GenShortPasswordError" class="tests.NavLoginTest"/>
-      </group> <!-- LoginCreateAcc -->
       <group name="GetTitles">
-        <method signature="LandingTest.GetTitle()[pri:6, instance:tests.LandingTest@6a03bcb1]" name="GetTitle" class="tests.LandingTest"/>
-        <method signature="NavLetterTest.GetTitle()[pri:1, instance:tests.NavLetterTest@5609159b]" name="GetTitle" class="tests.NavLetterTest"/>
+        <method signature="LandingTest.GetTitle()[pri:6, instance:tests.LandingTest@5f8edcc5]" name="GetTitle" class="tests.LandingTest"/>
       </group> <!-- GetTitles -->
     </groups>
-    <test started-at="2023-09-08T21:24:26 EDT" name="Test" finished-at="2023-09-08T21:28:24 EDT" duration-ms="237888">
-      <class name="tests.NavSearchTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:26:55 EDT" name="openBrowser" finished-at="2023-09-08T21:27:01 EDT" duration-ms="5868" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="SearchValuesOne()[pri:1, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:01 EDT" name="SearchValuesOne" finished-at="2023-09-08T21:27:07 EDT" duration-ms="6316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchValuesOne -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:07 EDT" name="closeBrowser" finished-at="2023-09-08T21:27:08 EDT" duration-ms="520" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:08 EDT" name="openBrowser" finished-at="2023-09-08T21:27:13 EDT" duration-ms="5927" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="SearchValuesTwo()[pri:2, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:13 EDT" name="SearchValuesTwo" finished-at="2023-09-08T21:27:25 EDT" duration-ms="11423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchValuesTwo -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:25 EDT" name="closeBrowser" finished-at="2023-09-08T21:27:25 EDT" duration-ms="541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:25 EDT" name="openBrowser" finished-at="2023-09-08T21:27:31 EDT" duration-ms="5763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="SearchValuesThree()[pri:3, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:31 EDT" name="SearchValuesThree" finished-at="2023-09-08T21:27:42 EDT" duration-ms="10936" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchValuesThree -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:42 EDT" name="closeBrowser" finished-at="2023-09-08T21:27:43 EDT" duration-ms="641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:43 EDT" name="openBrowser" finished-at="2023-09-08T21:27:49 EDT" duration-ms="5991" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="SearchValuesFour()[pri:4, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:49 EDT" name="SearchValuesFour" finished-at="2023-09-08T21:27:58 EDT" duration-ms="9362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchValuesFour -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:58 EDT" name="closeBrowser" finished-at="2023-09-08T21:27:59 EDT" duration-ms="656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:27:59 EDT" name="openBrowser" finished-at="2023-09-08T21:28:05 EDT" duration-ms="6088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="SearchValuesFive()[pri:5, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:28:05 EDT" name="SearchValuesFive" finished-at="2023-09-08T21:28:14 EDT" duration-ms="9272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchValuesFive -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavSearchTest@57250572]" started-at="2023-09-08T21:28:14 EDT" name="closeBrowser" finished-at="2023-09-08T21:28:15 EDT" duration-ms="628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.NavSearchTest -->
-      <class name="tests.NavLetterTest">
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.NavLetterTest@5609159b]" started-at="2023-09-08T21:28:15 EDT" name="getBrowser" finished-at="2023-09-08T21:28:21 EDT" duration-ms="6117" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBrowser -->
-        <test-method signature="GetTitle()[pri:1, instance:tests.NavLetterTest@5609159b]" started-at="2023-09-08T21:28:21 EDT" name="GetTitle" finished-at="2023-09-08T21:28:24 EDT" duration-ms="2781" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetTitle -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.NavLetterTest@5609159b]" started-at="2023-09-08T21:28:24 EDT" name="closeBrowser" finished-at="2023-09-08T21:28:24 EDT" duration-ms="611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.NavLetterTest -->
+    <test started-at="2023-09-11T10:51:26 EDT" name="Default test" finished-at="2023-09-11T10:52:14 EDT" duration-ms="47830">
       <class name="tests.LandingTest">
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:26 EDT" name="getBrowser" finished-at="2023-09-08T21:24:35 EDT" duration-ms="8334" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:26 EDT" name="getBrowser" finished-at="2023-09-11T10:51:36 EDT" duration-ms="9556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="playVid()[pri:1, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:35 EDT" name="playVid" finished-at="2023-09-08T21:24:36 EDT" duration-ms="731" status="PASS">
+        <test-method signature="playVid()[pri:1, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:36 EDT" name="playVid" finished-at="2023-09-11T10:51:36 EDT" duration-ms="469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- playVid -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:36 EDT" name="tearDown" finished-at="2023-09-08T21:24:36 EDT" duration-ms="667" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:36 EDT" name="tearDown" finished-at="2023-09-11T10:51:37 EDT" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:36 EDT" name="getBrowser" finished-at="2023-09-08T21:24:42 EDT" duration-ms="5437" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:37 EDT" name="getBrowser" finished-at="2023-09-11T10:51:43 EDT" duration-ms="5740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="ClickSignUpAndChangeCountry()[pri:2, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:42 EDT" name="ClickSignUpAndChangeCountry" finished-at="2023-09-08T21:24:43 EDT" duration-ms="1315" status="PASS">
+        <test-method signature="ClickSignUpAndChangeCountry()[pri:2, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:43 EDT" name="ClickSignUpAndChangeCountry" finished-at="2023-09-11T10:51:44 EDT" duration-ms="1354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickSignUpAndChangeCountry -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:43 EDT" name="tearDown" finished-at="2023-09-08T21:24:44 EDT" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:44 EDT" name="tearDown" finished-at="2023-09-11T10:51:45 EDT" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:44 EDT" name="getBrowser" finished-at="2023-09-08T21:24:50 EDT" duration-ms="6011" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:45 EDT" name="getBrowser" finished-at="2023-09-11T10:51:51 EDT" duration-ms="5889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="SwipeRight()[pri:3, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:50 EDT" name="SwipeRight" finished-at="2023-09-08T21:24:51 EDT" duration-ms="1139" status="PASS">
+        <test-method signature="SwipeRight()[pri:3, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:51 EDT" name="SwipeRight" finished-at="2023-09-11T10:51:52 EDT" duration-ms="1143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwipeRight -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:51 EDT" name="tearDown" finished-at="2023-09-08T21:24:51 EDT" duration-ms="645" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:52 EDT" name="tearDown" finished-at="2023-09-11T10:51:52 EDT" duration-ms="624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:51 EDT" name="getBrowser" finished-at="2023-09-08T21:24:57 EDT" duration-ms="5882" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:52 EDT" name="getBrowser" finished-at="2023-09-11T10:51:58 EDT" duration-ms="5805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="SwipeSecond()[pri:4, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:57 EDT" name="SwipeSecond" finished-at="2023-09-08T21:24:58 EDT" duration-ms="1159" status="PASS">
+        <test-method signature="SwipeSecond()[pri:4, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:51:58 EDT" name="SwipeSecond" finished-at="2023-09-11T10:52:00 EDT" duration-ms="1247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwipeSecond -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:58 EDT" name="tearDown" finished-at="2023-09-08T21:24:59 EDT" duration-ms="769" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:00 EDT" name="tearDown" finished-at="2023-09-11T10:52:00 EDT" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:24:59 EDT" name="getBrowser" finished-at="2023-09-08T21:25:05 EDT" duration-ms="5473" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:00 EDT" name="getBrowser" finished-at="2023-09-11T10:52:06 EDT" duration-ms="5420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="SwipeThird()[pri:5, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:25:05 EDT" name="SwipeThird" finished-at="2023-09-08T21:25:06 EDT" duration-ms="981" status="PASS">
+        <test-method signature="SwipeThird()[pri:5, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:06 EDT" name="SwipeThird" finished-at="2023-09-11T10:52:07 EDT" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwipeThird -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:25:06 EDT" name="tearDown" finished-at="2023-09-08T21:25:07 EDT" duration-ms="1028" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:07 EDT" name="tearDown" finished-at="2023-09-11T10:52:07 EDT" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:25:07 EDT" name="getBrowser" finished-at="2023-09-08T21:25:13 EDT" duration-ms="6042" status="PASS">
+        <test-method is-config="true" signature="getBrowser()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:07 EDT" name="getBrowser" finished-at="2023-09-11T10:52:13 EDT" duration-ms="5671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method signature="GetTitle()[pri:6, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:25:13 EDT" name="GetTitle" finished-at="2023-09-08T21:25:13 EDT" duration-ms="494" status="PASS">
+        <test-method signature="GetTitle()[pri:6, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:13 EDT" name="GetTitle" finished-at="2023-09-11T10:52:13 EDT" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@6a03bcb1]" started-at="2023-09-08T21:25:13 EDT" name="tearDown" finished-at="2023-09-08T21:25:14 EDT" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingTest@5f8edcc5]" started-at="2023-09-11T10:52:13 EDT" name="tearDown" finished-at="2023-09-11T10:52:14 EDT" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LandingTest -->
-      <class name="tests.NavLoginTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:14 EDT" name="beforeMethod" finished-at="2023-09-08T21:25:20 EDT" duration-ms="6257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="LoginWithError()[pri:1, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:20 EDT" name="LoginWithError" finished-at="2023-09-08T21:25:26 EDT" duration-ms="5718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:26 EDT" name="afterMethod" finished-at="2023-09-08T21:25:26 EDT" duration-ms="644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:26 EDT" name="beforeMethod" finished-at="2023-09-08T21:25:33 EDT" duration-ms="6190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="GenFirstNameError()[pri:2, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:33 EDT" name="GenFirstNameError" finished-at="2023-09-08T21:25:41 EDT" duration-ms="8591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenFirstNameError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:41 EDT" name="afterMethod" finished-at="2023-09-08T21:25:42 EDT" duration-ms="645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:42 EDT" name="beforeMethod" finished-at="2023-09-08T21:25:48 EDT" duration-ms="6234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="GenLastNameError()[pri:3, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:48 EDT" name="GenLastNameError" finished-at="2023-09-08T21:25:57 EDT" duration-ms="8586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenLastNameError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:57 EDT" name="afterMethod" finished-at="2023-09-08T21:25:57 EDT" duration-ms="635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:25:57 EDT" name="beforeMethod" finished-at="2023-09-08T21:26:03 EDT" duration-ms="5946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="GenPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:03 EDT" name="GenPasswordError" finished-at="2023-09-08T21:26:12 EDT" duration-ms="8567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenPasswordError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:12 EDT" name="afterMethod" finished-at="2023-09-08T21:26:13 EDT" duration-ms="635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:13 EDT" name="beforeMethod" finished-at="2023-09-08T21:26:17 EDT" duration-ms="3987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="GenPredPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:17 EDT" name="GenPredPasswordError" finished-at="2023-09-08T21:26:39 EDT" duration-ms="22365" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: #InputIdentityFlowValue
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5', java.version: '17.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [be3ff72f-d46c-4f25-ae94-ad1ec6749258, findElement {using=id, value=InputIdentityFlowValue}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:44793, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 12103, moz:profile: /var/folders/y8/zjbdc8b17zl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:44793/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: be3ff72f-d46c-4f25-ae94-ad1ec6749258]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #InputIdentityFlowValue
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5', java.version: '17.0.7'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [be3ff72f-d46c-4f25-ae94-ad1ec6749258, findElement {using=id, value=InputIdentityFlowValue}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.3, moz:accessibilityChecks: false, moz:buildID: 20230726201356, moz:debuggerAddress: 127.0.0.1:44793, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 12103, moz:profile: /var/folders/y8/zjbdc8b17zl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:44793/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: be3ff72f-d46c-4f25-ae94-ad1ec6749258
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at pages.NavLoginPage.AddInputValueToEmail(NavLoginPage.java:68)
-at pages.NavLoginPage.Login(NavLoginPage.java:83)
-at tests.NavLoginTest.GenPredPasswordError(NavLoginTest.java:92)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenPredPasswordError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:39 EDT" name="afterMethod" finished-at="2023-09-08T21:26:40 EDT" duration-ms="631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:40 EDT" name="beforeMethod" finished-at="2023-09-08T21:26:46 EDT" duration-ms="6088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="GenShortPasswordError()[pri:3, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:46 EDT" name="GenShortPasswordError" finished-at="2023-09-08T21:26:54 EDT" duration-ms="8570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenShortPasswordError -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavLoginTest@21b2e768]" started-at="2023-09-08T21:26:54 EDT" name="afterMethod" finished-at="2023-09-08T21:26:55 EDT" duration-ms="641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.NavLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -14,12 +14,9 @@ import pages.NavLetterPage;
 
 public class NavLetterTest extends TestBase{
 	
-	
-	
-	WebDriver driver;
-	NavLetterPage nlp;
-	DataFile df;
-	
+		NavLetterPage nlp;
+		DataFile df;
+		
 	public NavLetterTest() {
 		super();
 	}
@@ -30,21 +27,20 @@ public class NavLetterTest extends TestBase{
 		intialization();
 		nlp = new NavLetterPage();
 		df = new DataFile();
-
 	}
 	
 	@AfterMethod
 	public void closeBrowser() {
-		nlp.closeBrowser();
+		driver.quit();
 	}
 	
 	
-  @Test(priority=1, groups = {"GetTitles"})
-  public void GetTitle() throws InterruptedException {
-		
-	  nlp.clickOnLetter();
-	  
-	  Thread.sleep(2000);
-	  nlp.GetTitleForNewsLetter();
-	}
+	  @Test(priority=1, groups = {"GetTitles"})
+	  public void GetTitle() throws InterruptedException {
+			
+		  nlp.clickOnLetter();
+		  
+		  Thread.sleep(2000);
+		  nlp.GetTitleForNewsLetter();
+		}
 }

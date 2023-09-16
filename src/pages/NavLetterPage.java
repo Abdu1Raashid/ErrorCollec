@@ -19,23 +19,12 @@ public class NavLetterPage extends TestBase{
 	public List<WebElement> NewsLetterTitle;
 
 	public NavLetterPage() {
-		PageFactory.initElements(driver, this);
-		
-	}
-	
-	public void OpenLandingPage() {
-		driver.get("https://www.nationalgeographic.com/");
-	}
-
-	public void closeBrowser() {
-		driver.quit();
+		PageFactory.initElements(driver, this);	
 	}
 	
 	 public void clickOnLetter() {
-			
 			NewsLetter.click();
 		}
-	 
 	 
 	 public void GetTitleForNewsLetter() {
 		 for(int i=0; i<NewsLetterTitle.size();i++) {
